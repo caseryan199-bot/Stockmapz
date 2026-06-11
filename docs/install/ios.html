@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Install StockMapz — iPhone</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card: #ffffff;
+      --ink: #1a1a1a;
+      --muted: #666;
+      --accent: #2E5E4E;
+      --accent-fg: #ffffff;
+      --emergency: #c62828;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --card: #2a2a2a;
+        --ink: #f0f0f0;
+        --muted: #aaa;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 32px 20px 40px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 28px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .card .step {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      background: var(--accent);
+      color: var(--accent-fg);
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 14px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .card h2 {
+      display: inline;
+      font-size: 19px;
+      font-weight: 600;
+      margin: 0;
+      vertical-align: middle;
+    }
+    .card .body {
+      margin: 14px 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: var(--accent-fg);
+      text-decoration: none;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transition: transform 0.05s;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn.emergency { background: var(--emergency); }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 28px;
+    }
+    .footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>StockMapz · iPhone</h1>
+    <p class="lede">Tap both buttons below to install StockMapz and the official Triple Zero emergency app.</p>
+
+    <div class="card">
+      <span class="step">1</span><h2>Install StockMapz</h2>
+      <p class="body">
+        Opens TestFlight. If you don't have TestFlight yet, the App Store opens first — install it, then come back to this page.
+      </p>
+      <a class="btn" href="https://testflight.apple.com/join/u5qYPcZF">
+        Install StockMapz
+      </a>
+    </div>
+
+    <div class="card">
+      <span class="step">2</span><h2>Install Emergency Plus</h2>
+      <p class="body">
+        The official Triple Zero (000) app. Works offline at remote stations — shares your exact GPS with dispatch + the real what3words address.
+      </p>
+      <a class="btn emergency"
+         href="https://apps.apple.com/au/app/emergency/id691814685">
+        Install Emergency Plus
+      </a>
+    </div>
+
+    <p class="footer">
+      StockMapz built by AAT.&nbsp;
+      <a href="../StockMapz-install.pdf">Printable install card</a>
+    </p>
+  </div>
+</body>
+</html>
